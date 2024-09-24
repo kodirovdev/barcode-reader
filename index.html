@@ -40,7 +40,8 @@
     });
 
     Quagga.onDetected(function (result) {
-        alert(result.codeResult.code);
+        alert("Detected barcode: " + result.codeResult.code);
+        const camera = document.querySelector('#camera').style.display = "none"
     });
 </script>
 </body>
