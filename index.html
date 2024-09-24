@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
     <style>
         #camera video{
-            width: 340px;
-            height: 400px;
+            width:100%;
+            max-width: 640px;
         }
     </style>
 </head>
@@ -41,7 +41,6 @@
 
     Quagga.onDetected(function (result) {
         alert("Detected barcode: " + result.codeResult.code);
-        const camera = document.querySelector('#camera').style.display = "none"
     });
 </script>
 </body>
